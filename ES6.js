@@ -161,6 +161,59 @@ const array1 = [1, 2, 3, 4];
 console.log(array1.forEach((el,i,t)=> t[i] = el + 1))
 
 
+var table = [2,4,7,8]
+
+// console.log(t.map((achref,mahmoud,youssef)=>achref+1))
+
+console.log(table.map((el,i,t)=> t[i] = el+2))
+
+console.log(table)
+
+var table = [2,4,7,8]
+var sum = 0
+table.forEach((el,i,t)=> sum+= el)
+
+
+console.log(sum)
+
+
+var table = [2,"Youssef",4,7,8,"Achref"]
+
+
+
+console.log(table.filter((el,i,t)=> typeof(el) == "string"))
+
+
+
+var table = [2,2,4,7,8,4]
+console.log(table.find((el, i, t) => el == 84))
+console.log(table.findIndex((el,i,t)=> el ==4))
+
+var table = [2,2,4,7,8,4]
+
+
+console.log(table.sort((a,b)=>a-b))
+
+
+var table = ["b","a","z",1,99,2]
+
+
+console.log(table.sort())
+
+
+var table = [1,3,5,4,9,7,6]
+var b = table.splice(2)
+var a = table.splice(1, 3)
+
+console.log([...a,...b])
+
+var str = "bonjour la vie"
+
+console.log(str.split(" "))
+
+var t = ["Achref","Youssef","Mariem"]
+
+console.log(t.join(" "))
 
 
 
